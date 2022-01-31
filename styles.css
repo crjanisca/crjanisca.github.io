@@ -1,13 +1,13 @@
 a:link {
     color: green;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
     color: pink;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
