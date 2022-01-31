@@ -23,5 +23,5 @@ a:active {
 }
 
 a {
-    font-family: Arial;
-  }
+    'PT Sans Narrow', sans-serif;
+}
