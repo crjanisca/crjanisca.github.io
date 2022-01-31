@@ -22,3 +22,6 @@ a:active {
     text-decoration: underline;
 }
 
+a {
+    font-family: Arial;
+  }
