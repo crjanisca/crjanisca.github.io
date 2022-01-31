@@ -11,13 +11,13 @@ a:visited {
 }
 
 a:hover {
-    color: whitesmoke;
+    color: grey;
     background-color: transparent;
     text-decoration: underline;
 }
 
 a:active {
-    color: whitesmoke;
+    color: grey;
     background-color: transparent;
     text-decoration: underline;
 }
