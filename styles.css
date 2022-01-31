@@ -1,23 +1,23 @@
 a:link {
-    color: green;
+    color: white;
     background-color: transparent;
     text-decoration: underline;
 }
 
 a:visited {
-    color: pink;
+    color: white;
     background-color: transparent;
     text-decoration: underline;
 }
 
 a:hover {
-    color: red;
+    color: whitesmoke;
     background-color: transparent;
     text-decoration: underline;
 }
 
 a:active {
-    color: yellow;
+    color: whitesmoke;
     background-color: transparent;
     text-decoration: underline;
 }
