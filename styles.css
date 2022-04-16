@@ -42,7 +42,7 @@ p {
     margin-left: 20px;
 }
 
-welcome-message {
+#welcome-message {
     font-family: 'Brush Script MT';
     color: black;
 }
