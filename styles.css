@@ -1,11 +1,11 @@
 a:link {
-    color: white;
+    color: black;
     background-color: transparent;
     text-decoration: underline;
 }
 
 a:visited {
-    color: white;
+    color: black;
     background-color: transparent;
     text-decoration: underline;
 }
@@ -31,6 +31,10 @@ p {
     font-family: 'Arial';
 }
 
+h1 {
+    font-family: 'Arial';
+    color: black;
+}
 
 p {
     margin-top: 20px;
