@@ -41,3 +41,8 @@ p {
     margin-right: 150px;
     margin-left: 20px;
 }
+
+welcome-message {
+    font-family: 'Brush Script MT';
+    color: black;
+}
