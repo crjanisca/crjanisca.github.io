@@ -1,0 +1,33 @@
+.project-list a:link {
+    color: lime;
+    text-decoration: none;
+}
+
+.project-list a:visited {
+    color: lime;
+    text-decoration: none;
+}
+
+.project-list a:hover {
+    color: limegreen;
+    text-decoration: none;
+}
+
+.project-list a:active {
+    color: limegreen;
+    text-decoration: none;
+}
+
+.project-list {
+    margin-left: 50px;
+    background: black;
+    color: white;
+    font-family: monospace;
+    list-style-type: none;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.terminal-blink {
+    color: black;
+}
