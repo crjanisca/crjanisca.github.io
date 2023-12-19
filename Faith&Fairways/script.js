@@ -1,2 +1,1 @@
-const d = new Date();
-let year = d.getFullYear();
+$('#spanYear').html(new Date().getFullYear());
