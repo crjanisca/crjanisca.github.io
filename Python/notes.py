@@ -233,8 +233,24 @@ print(len(fruits)) #prints the length of the list
 print(dir(fruits)) #prints all the functions that can be used with lists
 print(help(fruits)) #prints a guide on lists
 
-vegetables = ["carrot", "broccoli", "spinach", "potato", "cabbage"] #unordered, unchangeable but can add/remove, duplicates NOT allowed
+vegetables = {"carrot", "broccoli", "spinach", "potato", "cabbage"} #unordered, unchangeable but can add/remove, duplicates NOT allowed
+
+print(vegetables.index("broccoli")) #returns the index of the specified item
+print(len(vegetables)) #prints the length of the set
+print(dir(vegetables)) #prints all the functions that can be used with sets
+print(help(vegetables)) #prints a guide on sets
+
 vegetables.add("onion") #adds to the specified position in the set
 vegetables.remove("carrot") #removes the specified item
-vegetables.pop(0) #removes the item at the specified position in the set BUT it's random
+vegetables.pop() #removes the first item in the set (which is random))
 vegetables.clear() #clears the set of all items
+
+instruments = ("guitar", "piano", "drums", "bass", "saxophone") #ordered, unchangeable, duplicates allowed
+
+print(instruments.index("guitar")) #returns the index of the specified item
+print(len(instruments)) #prints the length of the tuple
+print(dir(instruments)) #prints all the functions that can be used with tuples
+print(help(instruments)) #prints a guide on tuples
+
+instruments.count("guitar") #counts how many of the specified item are in the tuple
+
