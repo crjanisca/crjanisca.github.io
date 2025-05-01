@@ -254,3 +254,20 @@ print(help(instruments)) #prints a guide on tuples
 
 instruments.count("guitar") #counts how many of the specified item are in the tuple
 
+# 2D Lists
+fruits =     ["apple", "orange", "banana", "coconut", "pineapple"]
+vegetables = ["carrot", "broccoli", "spinach", "potato", "cabbage"]
+meats =      ["chicken", "beef", "pork", "fish", "lamb"]
+
+groceries = [fruits, vegetables, meats] #creates a 2D list
+other_groceries = [ ["apple", "orange", "banana", "coconut", "pineapple"], 
+                    ["carrot", "broccoli", "spinach", "potato", "cabbage"], 
+                    ["chicken", "beef", "pork", "fish", "lamb"]] #also creates a 2D list
+
+print(groceries[0]) #prints the row listed
+print(groceries[0][0]) #prints the specified item in the table
+
+for collection in groceries:
+    for food in collection:
+        print(food, end=" ")
+    print() #prints a new line after each loop
