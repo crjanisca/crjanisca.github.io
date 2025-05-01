@@ -271,3 +271,14 @@ for collection in groceries:
     for food in collection:
         print(food, end=" ")
     print() #prints a new line after each loop
+
+# Dictionaries
+
+captials = {"USA": "Washington D.C.",
+            "Pakistan": "Islamabad",
+            "Nepal": "Kathmandu",
+            "Sri Lanka": "Colombo"}
+
+print(dir(captials)) #prints all the functions that can be used with dictionaries
+print(help(captials)) #prints a guide on dictionaries
+print(captials.get("Japan")) #returns None if the specified item is not in the dictionary
