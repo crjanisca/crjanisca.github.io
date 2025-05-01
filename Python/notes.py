@@ -234,3 +234,7 @@ print(dir(fruits)) #prints all the functions that can be used with lists
 print(help(fruits)) #prints a guide on lists
 
 vegetables = ["carrot", "broccoli", "spinach", "potato", "cabbage"] #unordered, unchangeable but can add/remove, duplicates NOT allowed
+vegetables.add("onion") #adds to the specified position in the set
+vegetables.remove("carrot") #removes the specified item
+vegetables.pop(0) #removes the item at the specified position in the set BUT it's random
+vegetables.clear() #clears the set of all items
