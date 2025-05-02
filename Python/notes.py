@@ -274,11 +274,16 @@ for collection in groceries:
 
 # Dictionaries
 
-captials = {"USA": "Washington D.C.",
+capitals = {"USA": "Washington D.C.",
             "Pakistan": "Islamabad",
             "Nepal": "Kathmandu",
             "Sri Lanka": "Colombo"}
 
-print(dir(captials)) #prints all the functions that can be used with dictionaries
-print(help(captials)) #prints a guide on dictionaries
-print(captials.get("Japan")) #returns None if the specified item is not in the dictionary
+print(dir(capitals)) #prints all the functions that can be used with dictionaries
+print(help(capitals)) #prints a guide on dictionaries
+
+capitals.get("Japan") #returns specified item or None if item is not in dictionary
+capitals.update({"India": "New Delhi"}) #adds specified item to the list
+capitals.pop("India") #removes specified item
+capitals.popitem() #removes most recently added item
+keys = capitals.keys()
