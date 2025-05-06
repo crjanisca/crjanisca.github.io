@@ -286,4 +286,12 @@ capitals.get("Japan") #returns specified item or None if item is not in dictiona
 capitals.update({"India": "New Delhi"}) #adds specified item to the list
 capitals.pop("India") #removes specified item
 capitals.popitem() #removes most recently added item
-keys = capitals.keys()
+
+for key in capitals.keys():
+    print(key) #prints every key in the specified dictionary
+
+for value in capitals.values():
+    print(value) #prints the value of every key in the specified dictionary
+
+for key, value in capitals.items():
+    print(f"{key}: {value}")
