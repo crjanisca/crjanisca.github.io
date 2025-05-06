@@ -182,7 +182,6 @@ while name == "":
     
 print(f"Hello {name}")
 
-
 age = int(input("Enter your age: "))
 
 while age < 0:
