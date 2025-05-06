@@ -1,3 +1,7 @@
+# TODO: this is a general task
+# FIXME: this is a bug-related task
+# (NOT Python related)
+
 # Import
 import math
 import time
