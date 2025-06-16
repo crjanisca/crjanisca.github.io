@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+
+    <body class="container p-5 my-5 bg-black text-white position-relative">
+        <h1 class="text-center">
+            Welcome to My Profile!
+        </h1>
+
+        <p class="text-center text-danger text-decoration-underline">
+            <em>
+                !! hyperlinks on this page open new tabs to wikipedia and spotify !!
+            </em>
+        </p>
+
+        <img src="https://www.myteklab.com/user_assets/1930-meeeee-65115f7310082.JPG" alt="A picture of me holding a turtle" class="rounded mx-auto d-block img-thumbnail w-25">
+
+        <p class="text-center pt-2">
+            Hi! My name's Cru! I'm a 17 year old senior in highschool and a <a href="https://en.wikipedia.org/wiki/Third_culture_kid" target="_blank" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">TCK</a> living in <a href="https://en.wikipedia.org/wiki/Karachi" target="_blank" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Karachi, Pakistan!</a>
+        </p>
+
+        <h2 class="text-center pt-4">My Interests</h2>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.myteklab.com/user_assets/1930-getarsde-65118e3203367.jpg" class="d-block w-100 rounded" alt="electric guitar laying down">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Guitar</h5>
+                        <p>I make music on Spotify! <a href="https://open.spotify.com/artist/5ChRXqiowcviVSHZFse4Py?si=GfauQAG2SmS3HUlIJrHe9Q" target="_blank" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Click here to listen</a>!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.myteklab.com/user_assets/1930-diceeeee-6511a1179f825.jpg" class="d-block w-100 rounded" alt="white rpg dice">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Dungeons and Dragons</h5>
+                        <p>ROLL INITIATIVE!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.myteklab.com/user_assets/1930-codin-65118dead2711.jpg" class="d-block w-100 rounded" alt="a macbook with vscode open">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Coding</h5>
+                        <p>I'm just a nerd tbh</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.myteklab.com/user_assets/1930-travel-6511a2438ff89.jpg" class="d-block w-100 rounded" alt="the wing of an airplaine">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Traveling</h5>
+                        <p>As a TCK, I have the amazing opportunity to travel often, and I am <strong>extremely</strong> thankful for the opportunity!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h2 class="text-center">
+            Random Projects
+        </h2>
+        <p class="text-center text-danger text-decoration-underline">
+            <em>
+                basically just my progress throughout the year
+            </em>
+        </p>
+
+        <h3 class="text-center">Week 3</h3>
+        <iframe src="https://mytekserver.com/student/cru1930/infotech2/assignments/week3/" title="Week 3 Assignment" width="100%" height="500px" class="border bg-white"></iframe>
+
+        <h3 class="text-center">Week 4</h3>
+        <iframe src="https://mytekserver.com/student/cru1930/infotech2/assignments/week4/bootstrap/" title="Week 4 Assignment" width="100%" height="500px"></iframe>
+
+        <h3 class="text-center">Week 6</h3>
+        <iframe src="https://mytekserver.com/student/cru1930/infotech2/assignments/week6/index.html" title="Week 6 Assignment" width="100%" height="500px"></iframe>
+
+        <button onclick="clickMe()">Click me!</button>
+        <p id="clickme"></p>
+
+
+        <script>
+            function clickMe() {
+                document.getElementById("clickme").innerHTML = "Random fact unlocked!: I'm in your walls... Don't fall asleep...";
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

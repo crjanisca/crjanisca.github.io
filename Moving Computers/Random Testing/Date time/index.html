@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #footer {
+            font-size: 14px;
+            color: #7a7a7a;
+            text-align: center;
+        }
+        
+        #tac {
+            color: rgb(35, 82, 124);
+            text-decoration: underline;
+        }
+    </style>
+    <p id="footer">© Copyright 2020. Focused Feedback. <a id="tac" href="https://www.focusedfeedback.com/terms-conditions/?customize_changeset_uuid=3d2138d9-2aca-47fc-bc38-1f11dc45d3d2&customize_autosaved=on">Terms & Conditions.</a><br>All Rights Reserved.<br>713 Fairway Park Dr, Ann Arbor, MI 48103</p>
+    
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("footer").innerHTML = "© Copyright " + year + ". Focused Feedback. +<a id="tac" href="https://www.focusedfeedback.com/terms-conditions/?customize_changeset_uuid=3d2138d9-2aca-47fc-bc38-1f11dc45d3d2&customize_autosaved=on">Terms & Conditions.</a><br>All Rights Reserved.<br>713 Fairway Park Dr, Ann Arbor, MI 48103"
+    </script>
+</html>

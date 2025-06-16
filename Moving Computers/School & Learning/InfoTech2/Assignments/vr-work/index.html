@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+        <script src="https://www.myteklab.com/apps/code_editor/lib/aframe/aframe-extras.min.js"></script>
+        <script src="https://www.myteklab.com/apps/code_editor/lib/aframe/aframe-inspector-plugin-recast.js"></script>
+    </head>
+    <body>
+        <a-scene background="color: skyblue" inspector-plugin-recast>
+            <!-- ground -->
+            <a-plane color="green"
+                rotation="-90 0 0"
+                width="10"
+                height="10">
+            </a-plane>
+            <a-box width="1"
+                height="3"
+                depth="8"
+                color="red"
+                position="0 1.5 0">
+            </a-box>
+            
+            <!-- camera -->
+            <a-entity movement-controls="speed: 0.30;" position="2 0 5">
+                <a-entity camera
+                        position="0 1.6 0"
+                        look-controls>
+                </a-entity>
+            </a-entity>
+
+            <a-assets>
+                <a-asset-item id="my-nav-mesh" src="">   
+                </a-asset-item>
+            </a-assets>
+            <a-entity gltf-model="#my-nav-mesh" nav-mesh position="0 -0.1 0" visible="false">
+            </a-entity>
+        </a-scene>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Guitar Clicker</title>
+        <link rel="icon" type="image/x-icon" href="https://www.myteklab.com/user_assets/1930-gwetarh-651979d117561.png">
+        <script src="script.js"></script>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h2 class="warning">!! Please do not refresh the page unless you want to start over !!</h2>
+        <div class="row">
+            <div class="column">
+                <div class="game">
+                    <h1>Guitar Clicker</h1>
+                    <h3 id="gameStage">
+                        Stage 0: Who even are you
+                    </h3>
+                    <div class="stats">
+                        <p id="totalMoney">
+                            Bank Account: $0.00
+                        </p>
+                        <p id="skillLevel">
+                            Skill Level: 0
+                        </p>
+                        <p id="guitarStatus">
+                            Guitar Status: Old
+                        </p>
+                        <p id="bandMembers">
+                            Band Members: 1/4
+                        </p>
+                    </div>
+                    
+                    <div class="shop">
+                        <button onclick="earnMoney();" id="moneyEarned" class="click-me">
+                            Earn Money (+$0.25)
+                        </button>
+                        <button onclick="takeLesson();" id="lessonTaking">
+                            Take Lesson ($10)
+                        </button>
+                        <br>
+                        <button onclick="buyGuitar();" id="buyNewGuitar">
+                            Buy a new guitar! ($500)
+                        </button>
+                        <br id="breakNewGuitar">
+                        <div id="hire-band-members">
+                            <button onclick="hireDrummer();" id="hireDrummer">
+                                Hire full time drummer ($1000)
+                            </button>
+                            <button onclick="hireBassist();" id="hireBassist">
+                                Hire full time bassist ($1000)
+                            </button>
+                            <button onclick="hireVocalist();" id="hireVocalist">
+                                Hire full time vocalist ($1000)
+                            </button>
+                        </div>
+                        <div id="marketing">
+                            <button onclick="buyAds();" id="buyAds">
+                                Buy Ads ($2000) [+$10/s]
+                            </button>
+                            <button onclick="hireMarketingTeam();" id="hireMarketingTeam">
+                                Hire Marketing Team ($10,000) [+$50/s & $x2 per click]
+                            </button>
+                        </div>
+                        <div id="distribution">
+                            <button onclick="streamMusic();" id="streamMusic">
+                                Stream your music! ($25,000) [+$40/s & $x2 per click]
+                            </button>
+                            <button onclick="musicOnRadio();" id="musicOnRadio">
+                                Play music on local radio! ($50,000) [$x4 per click]
+                            </button>
+                            <button onclick="signDeal();" id="signDeal">
+                                Sign a Record Deal! ($100,000) [+$400/s]
+                            </button>
+                        </div>
+                        <h3 id="toBeContinued">
+                            To be continued when I'm less busy...
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="instructions">
+                    <h1>Instructions</h1>
+                    <p>
+                        To begin, click "Earn Money" to start earning money. Your wages at the beginning are fairly low. To increase them, you need to get paid more at gigs, which requires more skill. To increase your skill,take some guitar lessons by clicking "Take Guitar Lesson". Once you reach the 5th skill level, your pay will increase and you will enter Stage 1! Your pay will continue to increase until you hit level 20, where you are skilled enough to continue your rockstar journey without anymore lessons!
+                    </p>
+                    <p>
+                        When you reach Stage 2 (all stage requirements can be found at the bottom of instructions), you can start earning even more by buying ads, hiring a marketing team, etc.
+                    </p>
+                    <h2>Stage Requirements:</h2>
+                    <ul class="stage-requirements">
+                        <li>Stage 1: Reach level 5</li>
+                        <li>Stage 2: Reach level 20, buy new guitar, hire a drummer, vocalist, and bassist</li>
+                        <li>Stage 3: To be continued...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

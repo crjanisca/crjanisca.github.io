@@ -1,0 +1,75 @@
+body {
+    background: rgb(97, 97, 97);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.warning {
+    color: rgb(255, 247, 0);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.game {
+    border: 2px solid black;
+    text-align: center;
+    background: white;
+
+}
+.stats {
+    position: relative;
+    margin: auto;
+    flex: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid black;
+    width: 200px;
+    background: rgb(234, 176, 101);
+}
+
+.click-me {
+    background: rgb(62, 188, 62);
+}
+
+.shop {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    padding: 10px;
+    flex: 50%;
+}
+
+.instructions {
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+button {
+    margin-bottom: 4px;
+}
+
+.stage-requirements {
+    text-align: left;
+}
+
+#hire-band-members {
+    visibility: hidden;
+}
+
+#marketing {
+    visibility: hidden;
+}
+
+#distribution {
+    visibility: hidden;
+}
+
+#toBeContinued {
+    visibility: hidden;
+}

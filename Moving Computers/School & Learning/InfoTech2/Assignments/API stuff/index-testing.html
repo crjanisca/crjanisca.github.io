@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .badges {    
+            background: skyblue;    
+            width: 50px;    
+            height: 50px;    
+            border: 1px solid #fff;    
+            float: left;    
+            padding: 20px;    
+            image-rendering: auto;    
+            image-rendering: crisp-edges;    
+            image-rendering: pixelated;
+        }
+        </style>
+    <body>
+        <div id="container"></div>
+
+        <script>
+            fetch('https://www.myteklab.com/APIV1/loginDetails/2').then(function(response) {
+                response.json().then(function(data) {
+                    badges = data['badges'];
+                    var innerContent = "";
+                    badges.forEach(function(item) {
+                        innerContent += '<img class="badges" src="' + item['badge_img'] + '" ' +
+                        'title="' + item['datetime_added'] + ' - ' + item['comments'] + '">';
+                    })
+                    var container = document.getElementById("container");
+                    container.innerHTML = innerContent;
+                })
+            })
+        </script>
+    </body>
+</html>

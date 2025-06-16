@@ -1,0 +1,41 @@
+/* Set the background color and font for the main window */
+QMainWindow {
+    background-color: #f4f4f4;
+    font-family: SF Pro Text Regular;
+}
+
+/* Set the background color, font, and border for the QTextEdit widget */
+QTextEdit {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    font-family: SF Pro Text Regular;
+}
+
+/* Set the background color and font for the menu bar */
+QMenuBar {
+    background-color: #f4f4f4;
+    font-family: SF Pro Text Regular;
+}
+
+/* Set the background color, font, and border for the "File" menu */
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    font-family: SF Pro Text Regular;
+}
+
+/* Set the background color and font for the "Save" action */
+QAction {
+    background-color: #ffffff;
+    font-size: 16px;
+    font-family: SF Pro Text Regular;
+}
+
+/* Set the background color and font for the "Save" action when it's hovered over */
+QAction:hover {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    font-family: SF Pro Text Regular;
+}

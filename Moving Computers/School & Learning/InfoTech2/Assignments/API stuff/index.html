@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p {
+            padding-left: 24px;
+            font-weight: bolder;
+            font-size: x-large;
+            font-family: monospace;
+        }
+        .badges {
+            width: 350px;
+            height: 50px;
+            border: 1px solid #fff;
+            padding-left: 20px;
+            image-rendering: auto;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
+        }
+        tr, td, th {
+            width: auto;
+            background: black;
+            color: lime;
+            font-family: 'Courier New', Courier, monospace;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        .dateTime {
+            width: 100px;
+        }
+    </style>
+
+    <body>
+        <div id="badgeCount"></div>
+        <div id="container"></div>
+
+        <script>
+            fetch('https://www.myteklab.com/APIV1/loginDetails/2').then(function(response) {
+                response.json().then(function(data) {
+                    badges = data['badges'];
+                    let badgeNumber = badges.length;
+                    var innerContent1 =  '<table class="badges">' +
+                                        '<tr>' +
+                                        '<th>Badge Name</th>' +
+                                        '<th>Image</th>' +
+                                        '<th>Date Added</th>' +
+                                        '</tr>';
+                    var innerContent2 = '<p> Mr MyTek has ' + badgeNumber + ' badges!</p>'
+                    badges.forEach(function(item) {
+                        innerContent1 += '<tr>' +
+                                        '<td>' + item['badge_name'] + '</td>' +
+                                        '<td><img src="' + item['badge_img'] + '">' +
+                                        '<td class="dateTime">' + item['datetime_added'] + '</td>'
+                                        '</td>';
+                    });
+                    innerContent1 += '</table>';
+                    var container = document.getElementById("container");
+                    var badgeCount = document.getElementById("badgeCount");
+                    container.innerHTML = innerContent1;
+                    badgeCount.innerHTML = innerContent2;
+                });
+            });
+        </script>
+    </body>
+</html>

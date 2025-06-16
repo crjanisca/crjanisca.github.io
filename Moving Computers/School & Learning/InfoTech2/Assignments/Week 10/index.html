@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .pixelart, .pixelart-anim {
+        display: inline-block;
+        margin-left: 10px;
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        image-rendering: auto; 
+        image-rendering: crisp-edges; 
+        image-rendering: pixelated;
+        outline: 10px black;
+    }
+    
+    .pixelart {
+        background-size: contain;
+        background-position: center;
+        outline: 10px black;
+    }
+    
+    .pixelart-anim {
+        background-size: cover;
+    }
+
+    @keyframes play {
+        100% {
+            background-position: var(--animation-length);
+        }
+    }
+</style>
+
+<body>
+    <div id="container"></div>
+
+    <script>
+        fetch('https://www.myteklab.com/APIV1/pixelArt/2').then(function(response) {
+            response.json().then(function(data) {
+                var innerContent = "";
+                data.forEach(function(item) {
+                    if (item['frame_count'] > 1) {
+                    innerContent +=  '<div class="pixelart-anim" style="--animation-length: ' + item['frame_count'] * -200  + 'px;background-image: url(' + item['pixelart_img'] + ');-webkit-animation: play 1s steps(' + item['frame_count'] + ') infinite;"></div>'; 
+                    } else {
+                        innerContent += '<div class="pixelart">' +
+                        '<img src="' + item['pixelart_img'] + '">' +
+                        '</div>';
+                    }
+                });
+                var container = document.getElementById("container");
+                container.innerHTML = innerContent;
+            })
+        })
+    </script>
+</body>
+</html>

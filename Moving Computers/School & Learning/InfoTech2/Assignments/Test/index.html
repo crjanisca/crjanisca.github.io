@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect With CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1d1f20;
+        }
+        h1{
+            font-family: "Incosolata", Consolas, monospace;
+            font-size: 2em;
+            color: #d7b94c;
+        }
+        .typewriter{
+            position: relative;
+        }
+        .typewriter::after{
+            content: '|';
+            position: absolute;
+            left: 40;
+            color: white;
+            background-color: red;
+            width: 100%;
+            animation: typing 3s steps(13) alternate infinite,
+                        line 1s infinite;
+        }
+        @keyframes typing{
+            to{
+                width: 0%;
+            }
+        }
+        @keyframes line {
+            50%{
+                color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="typewriter">The Terminal!</h1>
+</body>
+</html>

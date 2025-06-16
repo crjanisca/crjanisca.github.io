@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 3em;
+    position: relative;
+    width: 375px;
+}
+
+.typewriter{
+    position: relative;
+}
+.typewriter::after{
+    content: '.';
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: white;
+    width: 100%;
+    animation: typing 3s steps(13) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
+
+.terminalWindow {
+    margin-left: 250px;
+    margin-right: 250px;
+    background: black;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 16px;
+    border-width: 8px;
+    padding: 20px;
+    color: lime;
+    font-weight: 550;
+}
+
+.commands {
+    color: white;
+}
+
+.links {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+.links:active {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+.links:visited {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.exe {
+    color: gold;
+    text-decoration: none;
+}
+
+.exe:active {
+    color: gold;
+    text-decoration: none;
+}
+
+.exe:visited {
+    color: gold;
+    text-decoration: none;
+}
+
+.exe:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.mp3 {
+    color: green;
+    text-decoration: none;
+}
+
+.mp3:active {
+    color: green;
+    text-decoration: none;
+}
+
+.mp3:visited {
+    color: green;
+    text-decoration: none;
+}
+
+.mp3:hover {
+    color: rgb(0, 152, 0);
+    text-decoration: none;
+}
+
+.png {
+    color: purple;
+    text-decoration: none;
+}
+
+.png:active {
+    color: purple;
+    text-decoration: none;
+}
+
+.png:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+.png:hover {
+    color: rgb(155, 0, 155);
+    text-decoration: none;
+}
